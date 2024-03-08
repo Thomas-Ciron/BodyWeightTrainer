@@ -3,7 +3,7 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 
 echo "Compiling Kotlin files..."
-kotlinc main.kt file.kt -include-runtime -d output.jar
+kotlinc src/*.kt -include-runtime -d BodyWeightTrainer.jar
 if [ $? -ne 0 ]; then
     echo -e "${RED}Compilation failed.${NC}" >&2
     exit 1
