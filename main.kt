@@ -1,3 +1,4 @@
 fun main() {
-    println("Coucou !")
+    val coeffs = getFileFloatLines("coeffs.txt")
+    println(coeffs)
 }
