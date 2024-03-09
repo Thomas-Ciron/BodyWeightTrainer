@@ -5,5 +5,6 @@ fun getExercisesEfficiency():List<List<Double>> {
 fun main() {
     val coeffs = getFileFloatLines("coeffs.txt")
     val trainedMusclesPerExo = getExercisesEfficiency().toMutableList()
-    println(trainedMusclesPerExo)
+    val exercises = getFileLines("exercices.txt")
+    println(exercises)
 }
